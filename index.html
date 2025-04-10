@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geralt AI</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/svg/favicon.svg">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+
+<body>
+    <!-- ====================================== Loader ===================================== -->
+    <div class="page-loader">
+        <div class="banter-loader">
+            <div class="banter-loader-box"></div>
+            <div class="banter-loader-box"></div>
+            <div class="banter-loader-box"></div>
+            <div class="banter-loader-box"></div>
+            <div class="banter-loader-box"></div>
+            <div class="banter-loader-box"></div>
+            <div class="banter-loader-box"></div>
+            <div class="banter-loader-box"></div>
+            <div class="banter-loader-box"></div>
+        </div>
+    </div>
+    <!-- ====================================== Header ===================================== -->
+    <div class="overlaytoggle"></div>
+    <header id="top-navbar" class="top-navbar">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/svg/logo.svg" alt="logo">
+                </a>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <img src="assets/images/svg/menu.svg" alt="menu">
+                </div>
+                <div class="nav-links-mn">
+                    <ul class="nav-links">
+                        <li class="d-flex justify-content-center w-100">
+                            <a href="index.html" class="side-menu-logo">
+                                <img src="assets/images/svg/logo.svg" alt="logo">
+                            </a>
+                        </li>
+                        <li><a class="a-link" href="#explore">Explore</a></li>
+                        <li><a class="a-link" href="#category">Category</a></li>
+                        <li><a class="a-link" href="#discover">Discover</a></li>
+                        <li><a class="a-link" href="#features">Features</a></li>
+                        <li><a class="a-link" href="#testimonials">Testimonials</a></li>
+                        <li><a class="a-link" href="#pricing">Pricing</a></li>
+                        <li><a class="a-link" href="#faq">Faq</a></li>
+                        <li><a class="a-link" href="#blogs">Blogs</a></li>
+                    </ul>
+                    <div class="header-buttons-main">
+                        <a href="form.html" class="login-btn">Login</a>
+                        <a href="form.html" class="signUp-btn">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ====================================== Background Lines ===================================== -->
+    <div class="grid-lines">
+        <div class="grid-line-1"></div>
+        <div class="grid-line-2"></div>
+        <div class="grid-line-3"></div>
+        <div class="grid-line-4"></div>
+        <div class="grid-line-5"></div>
+    </div>
+    <!-- ====================================== Section One ===================================== -->
+    <section class="section-one overflow-hidden" id="explore">
+        <div class="container">
+            <h1 class="imgGenerator ai-img-get-text fade_down">AI <span>Image Generator</span></h1>
+            <p class="bring fade_down">Bring your ideas to life with Generate image, the text to image generator in
+                Geralt AI. You can generate images quickly and easily, now with higher quality, more detail and improved
+                lighting and colour.</p>
+            <div class="inputGenerate" id="inputGenerate">
+                <input class="img-gner" type="text" placeholder="Describe what you want to see" name="Generate"
+                    autocomplete="off">
+                <div class="butn-drop-down-main">
+                    <div class="custom-dropdown">
+                        <input type="text" id="gender" placeholder="No style" name="gender" autocomplete="off" readonly>
+                        <span class="dropdown-arrow">
+                            <img src="assets/images/svg/dropdown.svg" alt="dropdown">
+                        </span>
+                        <div class="dropdown-options">
+                            <div class="dropdown-option" data-value="Photo">Photo</div>
+                            <div class="dropdown-option" data-value="3D">3D</div>
+                            <div class="dropdown-option" data-value="Comic">Comic</div>
+                            <div class="dropdown-option" data-value="IIIustration">IIIustration</div>
+                            <div class="dropdown-option" data-value="Cartoon Fun">Cartoon Fun</div>
+                            <div class="dropdown-option" data-value="Comic">Comic</div>
+                            <div class="dropdown-option" data-value="Dark">Dark</div>
+                            <div class="dropdown-option" data-value="Watercolor">Watercolor</div>
+                        </div>
+                    </div>
+                    <a href="#" class="generateImage">Generate a image</a>
+                </div>
+            </div>
+            <h2 class="noInspi">No Inspiration? Try this: <a href="#">Baby hedgehog wearing a flower crown in a
+                    garden</a>
+            </h2>
+            <div class="expand-img-main image">
+                <img class="expand-img" src="assets/images/home-page/expand-img.jpg" alt="expand-img">
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Two ===================================== -->
+    <section class="section-two">
+        <div class="container">
+            <h2 class="xplore fade_down">Explore the <span>AI Generate Image</span> possibilities.</h2>
+            <h3 class="stunnii fade_down">Check out these stunning AI-generated images in Geralt AI and the text prompts
+                that generated them.</h3>
+            <div class="masonry-grid">
+                <div class="image-container grid-item zoom_in">
+                    <img src="assets/images/home-page/possiblity-img1.jpg" alt="possiblity-img1.jpg">
+                    <div class="overlay">
+                        <p class="image-text">Rhinoceros animal with futuristic robotic parts</p>
+                        <button class="copy-btn" onclick="copyText()">Copy Prompts</button>
+                    </div>
+                </div>
+                <div class="image-container grid-item zoom_in">
+                    <img class="img-animation-style4 reveal" src="assets/images/home-page/possiblity-img2.jpg"
+                        alt="possiblity-img2.jpg">
+                    <div class="overlay">
+                        <p class="image-text">Rhinoceros animal with futuristic robotic parts</p>
+                        <button class="copy-btn" onclick="copyText()">Copy Prompts</button>
+                    </div>
+                </div>
+                <div class="image-container grid-item zoom_in">
+                    <img class="img-animation-style4 reveal" src="assets/images/home-page/possiblity-img3.jpg"
+                        alt="possiblity-img3.jpg">
+                    <div class="overlay">
+                        <p class="image-text">Rhinoceros animal with futuristic robotic parts</p>
+                        <button class="copy-btn" onclick="copyText()">Copy Prompts</button>
+                    </div>
+                </div>
+                <div class="image-container grid-item zoom_in">
+                    <img src="assets/images/home-page/possiblity-img4.jpg" alt="possiblity-img4.jpg">
+                    <div class="overlay">
+                        <p class="image-text">Rhinoceros animal with futuristic robotic parts</p>
+                        <button class="copy-btn" onclick="copyText()">Copy Prompts</button>
+                    </div>
+                </div>
+                <div class="image-container grid-item zoom_in">
+                    <img src="assets/images/home-page/possiblity-img5.jpg" alt="possiblity-img5.jpg">
+                    <div class="overlay">
+                        <p class="image-text">Rhinoceros animal with futuristic robotic parts</p>
+                        <button class="copy-btn" onclick="copyText()">Copy Prompts</button>
+                    </div>
+                </div>
+                <div class="image-container grid-item zoom_in">
+                    <img src="assets/images/home-page/possiblity-img6.jpg" alt="possiblity-img6.jpg">
+                    <div class="overlay">
+                        <p class="image-text">Rhinoceros animal with futuristic robotic parts</p>
+                        <button class="copy-btn" onclick="copyText()">Copy Prompts</button>
+                    </div>
+                </div>
+                <div class="image-container grid-item zoom_in">
+                    <img src="assets/images/home-page/possiblity-img7.jpg" alt="possiblity-img7.jpg">
+                    <div class="overlay">
+                        <p class="image-text">Rhinoceros animal with futuristic robotic parts</p>
+                        <button class="copy-btn" onclick="copyText()">Copy Prompts</button>
+                    </div>
+                </div>
+                <div class="image-container grid-item zoom_in">
+                    <img src="assets/images/home-page/possiblity-img8.jpg" alt="possiblity-img8.jpg">
+                    <div class="overlay">
+                        <p class="image-text">Rhinoceros animal with futuristic robotic parts</p>
+                        <button class="copy-btn" onclick="copyText()">Copy Prompts</button>
+                    </div>
+                </div>
+                <div class="image-container grid-item zoom_in">
+                    <img src="assets/images/home-page/possiblity-img9.jpg" alt="possiblity-img9.jpg">
+                    <div class="overlay">
+                        <p class="image-text">Rhinoceros animal with futuristic robotic parts</p>
+                        <button class="copy-btn" onclick="copyText()">Copy Prompts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Three ===================================== -->
+    <section class="section-three pt-0" id="category">
+        <div class="container">
+            <h2 class="xplore fade_down">Create your design, <span>Whatever Your Purpose</span></h2>
+            <h3 class="stunnii fade_down">Start with a prompt or just a blank canvas. However you begin, the end result
+                is your design.</h3>
+        </div>
+        <div class="creative-design-slider cursor">
+            <div class="slider-box-main border-end-0" data-bs-toggle="modal" data-bs-target="#characterDesign">
+                <img class="slider-img" src="assets/images/slider-images/slider-img1.jpg" alt="slider-img1">
+                <p class="character">Character Design</p>
+                <p class="characterText">Fun and expressive character design for cartoons and animation.</p>
+                <a href="javascript:void(0)" class="buildd">Build design now
+                    <img src="assets/images/svg/inSliderArrow.svg" alt="inSliderArrow">
+                </a>
+            </div>
+            <div class="slider-box-main border-end-0" data-bs-toggle="modal" data-bs-target="#fashionBeauty">
+                <img class="slider-img" src="assets/images/slider-images/slider-img2.jpg" alt="slider-img2">
+                <p class="character">Fashion & Beauty</p>
+                <p class="characterText">Offering entertaining options such as personal portraits and avatars.</p>
+                <a href="javascript:void(0)" class="buildd">Build design now
+                    <img src="assets/images/svg/inSliderArrow.svg" alt="inSliderArrow">
+                </a>
+            </div>
+            <div class="slider-box-main border-end-0" data-bs-toggle="modal" data-bs-target="#gameAssets">
+                <img class="slider-img" src="assets/images/slider-images/slider-img3.jpg" alt="slider-img3">
+                <p class="character">Game Assets</p>
+                <p class="characterText">Designing high-quality game assets for immersive experience.</p>
+                <a href="javascript:void(0)" class="buildd">Build design now
+                    <img src="assets/images/svg/inSliderArrow.svg" alt="inSliderArrow">
+                </a>
+            </div>
+            <div class="slider-box-main border-end-0" data-bs-toggle="modal" data-bs-target="#marketingAdvertising">
+                <img class="slider-img" src="assets/images/slider-images/slider-img4.jpg" alt="slider-img4">
+                <p class="character">Marketing & Advertising</p>
+                <p class="characterText">Meeting the needs of both marketing and advertising design.</p>
+                <a href="javascript:void(0)" class="buildd">Build design now
+                    <img src="assets/images/svg/inSliderArrow.svg" alt="inSliderArrow">
+                </a>
+            </div>
+            <div class="slider-box-main border-end-0" data-bs-toggle="modal" data-bs-target="#contentCreation">
+                <img class="slider-img" src="assets/images/slider-images/slider-img5.jpg" alt="slider-img5">
+                <p class="character">Content Creation</p>
+                <p class="characterText">Serving the demands of all kinds of social media creators.</p>
+                <a href="javascript:void(0)" class="buildd">Build design now
+                    <img src="assets/images/svg/inSliderArrow.svg" alt="inSliderArrow">
+                </a>
+            </div>
+            <div class="slider-box-main border-end-0" data-bs-toggle="modal" data-bs-target="#productPhotography">
+                <img class="slider-img" src="assets/images/slider-images/slider-img6.jpg" alt="slider-img6">
+                <p class="character">Product Photography</p>
+                <p class="characterText">Supplying services for design of product images.</p>
+                <a href="javascript:void(0)" class="buildd">Build design now
+                    <img src="assets/images/svg/inSliderArrow.svg" alt="inSliderArrow">
+                </a>
+            </div>
+        </div>
+        <!-- Character Design Modal -->
+        <div class="modal fade" id="characterDesign" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="liqua cgsq">Character Design</h2>
+                        <p class="sodales pb-0">Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed
+                            eget
+                            viverra egestas nisi in consequat. Fusce sodales augue a accumsan. Cras sollicitudin,
+                            ipsum eget blandit pulvinar. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+                            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            eleifend ac, enim.</p>
+                        <div class="masonry-grid-pop">
+                            <img src="assets/images/slider-images/slider-pop-img1.jpg" alt="slider-pop-img1">
+                            <img src="assets/images/slider-images/slider-pop-img2.jpg" alt="slider-pop-img2">
+                            <img src="assets/images/slider-images/slider-pop-img3.jpg" alt="slider-pop-img3">
+                            <img src="assets/images/slider-images/slider-pop-img4.jpg" alt="slider-pop-img4">
+                            <img src="assets/images/slider-images/slider-pop-img5.jpg" alt="slider-pop-img5">
+                            <img src="assets/images/slider-images/slider-pop-img6.jpg" alt="slider-pop-img6">
+                        </div>
+                        <p class="sodales">Vitae ipsum accumsan iaculis elementum. Lorem sed et fusce risus malesuada
+                            eu cras. Semper molestie elementum magna ullamcorper dui eget dolor nibh bibendum. Eu hac
+                            amet elit netus feugiat consectetur at. Felis habitant posuere neque libero. Placerat quam
+                            eget sollicitudin faucibus id ut a id est. Elit quam nullam luctus sed aliquam sed
+                            viverra.
+                        </p>
+                        <p class="sodales">Aenean et egestas nulla. Pellentesque habitant morbi tristique senectus et
+                            netus et malesuada fames ac turpis egestas. Fusce gravida, ligula non molestie tristique,
+                            justo elit blandit risus, blandit maximus augue magna accumsan ante. Duis id mi tristique,
+                            pulvinar neque at, lobortis tortor.</p>
+                        <div class="pop-img-gen-btn">
+                            <a href="index.html" class="generateImage pop-generateImage">Generate a image</a>
+                            <button class="generateImage close-grn" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fashion & Beauty Modal -->
+        <div class="modal fade" id="fashionBeauty" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="liqua cgsq">Fashion & Beauty</h2>
+                        <p class="sodales pb-0">Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed
+                            eget
+                            viverra egestas nisi in consequat. Fusce sodales augue a accumsan. Cras sollicitudin,
+                            ipsum eget blandit pulvinar. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+                            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            eleifend ac, enim.</p>
+                        <div class="masonry-grid-pop">
+                            <img src="assets/images/slider-images/slider-pop2-img1.jpg" alt="slider-pop-img1">
+                            <img src="assets/images/slider-images/slider-pop2-img2.jpg" alt="slider-pop-img2">
+                            <img src="assets/images/slider-images/slider-pop2-img3.jpg" alt="slider-pop-img3">
+                            <img src="assets/images/slider-images/slider-pop2-img4.jpg" alt="slider-pop-img4">
+                            <img src="assets/images/slider-images/slider-pop2-img5.jpg" alt="slider-pop-img5">
+                            <img src="assets/images/slider-images/slider-pop2-img6.jpg" alt="slider-pop-img6">
+                        </div>
+                        <p class="sodales">Vitae ipsum accumsan iaculis elementum. Lorem sed et fusce risus malesuada
+                            eu cras. Semper molestie elementum magna ullamcorper dui eget dolor nibh bibendum. Eu hac
+                            amet elit netus feugiat consectetur at. Felis habitant posuere neque libero. Placerat quam
+                            eget sollicitudin faucibus id ut a id est. Elit quam nullam luctus sed aliquam sed
+                            viverra.
+                        </p>
+                        <p class="sodales">Aenean et egestas nulla. Pellentesque habitant morbi tristique senectus et
+                            netus et malesuada fames ac turpis egestas. Fusce gravida, ligula non molestie tristique,
+                            justo elit blandit risus, blandit maximus augue magna accumsan ante. Duis id mi tristique,
+                            pulvinar neque at, lobortis tortor.</p>
+                        <div class="pop-img-gen-btn">
+                            <a href="index.html" class="generateImage pop-generateImage">Generate a image</a>
+                            <button class="generateImage close-grn" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Game Assets Modal -->
+        <div class="modal fade" id="gameAssets" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="liqua cgsq">Game Assets</h2>
+                        <p class="sodales pb-0">Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed
+                            eget
+                            viverra egestas nisi in consequat. Fusce sodales augue a accumsan. Cras sollicitudin,
+                            ipsum eget blandit pulvinar. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+                            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            eleifend ac, enim.</p>
+                        <div class="masonry-grid-pop">
+                            <img src="assets/images/slider-images/slider-pop3-img1.jpg" alt="slider-pop-img1">
+                            <img src="assets/images/slider-images/slider-pop3-img2.jpg" alt="slider-pop-img2">
+                            <img src="assets/images/slider-images/slider-pop3-img3.jpg" alt="slider-pop-img3">
+                            <img src="assets/images/slider-images/slider-pop3-img4.jpg" alt="slider-pop-img4">
+                            <img src="assets/images/slider-images/slider-pop3-img5.jpg" alt="slider-pop-img5">
+                            <img src="assets/images/slider-images/slider-pop3-img6.jpg" alt="slider-pop-img6">
+                        </div>
+                        <p class="sodales">Vitae ipsum accumsan iaculis elementum. Lorem sed et fusce risus malesuada
+                            eu cras. Semper molestie elementum magna ullamcorper dui eget dolor nibh bibendum. Eu hac
+                            amet elit netus feugiat consectetur at. Felis habitant posuere neque libero. Placerat quam
+                            eget sollicitudin faucibus id ut a id est. Elit quam nullam luctus sed aliquam sed
+                            viverra.
+                        </p>
+                        <p class="sodales">Aenean et egestas nulla. Pellentesque habitant morbi tristique senectus et
+                            netus et malesuada fames ac turpis egestas. Fusce gravida, ligula non molestie tristique,
+                            justo elit blandit risus, blandit maximus augue magna accumsan ante. Duis id mi tristique,
+                            pulvinar neque at, lobortis tortor.</p>
+                        <div class="pop-img-gen-btn">
+                            <a href="index.html" class="generateImage pop-generateImage">Generate a image</a>
+                            <button class="generateImage close-grn" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Marketing & Advertising Modal -->
+        <div class="modal fade" id="marketingAdvertising" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="liqua cgsq">Marketing & Advertising</h2>
+                        <p class="sodales pb-0">Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed
+                            eget
+                            viverra egestas nisi in consequat. Fusce sodales augue a accumsan. Cras sollicitudin,
+                            ipsum eget blandit pulvinar. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+                            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            eleifend ac, enim.</p>
+                        <div class="masonry-grid-pop">
+                            <img src="assets/images/slider-images/slider-pop4-img1.jpg" alt="slider-pop-img1">
+                            <img src="assets/images/slider-images/slider-pop4-img2.jpg" alt="slider-pop-img2">
+                            <img src="assets/images/slider-images/slider-pop4-img3.jpg" alt="slider-pop-img3">
+                            <img src="assets/images/slider-images/slider-pop4-img4.jpg" alt="slider-pop-img4">
+                            <img src="assets/images/slider-images/slider-pop4-img5.jpg" alt="slider-pop-img5">
+                            <img src="assets/images/slider-images/slider-pop4-img6.jpg" alt="slider-pop-img6">
+                        </div>
+                        <p class="sodales">Vitae ipsum accumsan iaculis elementum. Lorem sed et fusce risus malesuada
+                            eu cras. Semper molestie elementum magna ullamcorper dui eget dolor nibh bibendum. Eu hac
+                            amet elit netus feugiat consectetur at. Felis habitant posuere neque libero. Placerat quam
+                            eget sollicitudin faucibus id ut a id est. Elit quam nullam luctus sed aliquam sed
+                            viverra.
+                        </p>
+                        <p class="sodales">Aenean et egestas nulla. Pellentesque habitant morbi tristique senectus et
+                            netus et malesuada fames ac turpis egestas. Fusce gravida, ligula non molestie tristique,
+                            justo elit blandit risus, blandit maximus augue magna accumsan ante. Duis id mi tristique,
+                            pulvinar neque at, lobortis tortor.</p>
+                        <div class="pop-img-gen-btn">
+                            <a href="index.html" class="generateImage pop-generateImage">Generate a image</a>
+                            <button class="generateImage close-grn" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Creation Modal -->
+        <div class="modal fade" id="contentCreation" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="liqua cgsq">Content Creation</h2>
+                        <p class="sodales pb-0">Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed
+                            eget
+                            viverra egestas nisi in consequat. Fusce sodales augue a accumsan. Cras sollicitudin,
+                            ipsum eget blandit pulvinar. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+                            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            eleifend ac, enim.</p>
+                        <div class="masonry-grid-pop">
+                            <img src="assets/images/slider-images/slider-pop5-img1.jpg" alt="slider-pop-img1">
+                            <img src="assets/images/slider-images/slider-pop5-img2.jpg" alt="slider-pop-img2">
+                            <img src="assets/images/slider-images/slider-pop5-img3.jpg" alt="slider-pop-img3">
+                            <img src="assets/images/slider-images/slider-pop5-img4.jpg" alt="slider-pop-img4">
+                            <img src="assets/images/slider-images/slider-pop5-img5.jpg" alt="slider-pop-img5">
+                            <img src="assets/images/slider-images/slider-pop5-img6.jpg" alt="slider-pop-img6">
+                        </div>
+                        <p class="sodales">Vitae ipsum accumsan iaculis elementum. Lorem sed et fusce risus malesuada
+                            eu cras. Semper molestie elementum magna ullamcorper dui eget dolor nibh bibendum. Eu hac
+                            amet elit netus feugiat consectetur at. Felis habitant posuere neque libero. Placerat quam
+                            eget sollicitudin faucibus id ut a id est. Elit quam nullam luctus sed aliquam sed
+                            viverra.
+                        </p>
+                        <p class="sodales">Aenean et egestas nulla. Pellentesque habitant morbi tristique senectus et
+                            netus et malesuada fames ac turpis egestas. Fusce gravida, ligula non molestie tristique,
+                            justo elit blandit risus, blandit maximus augue magna accumsan ante. Duis id mi tristique,
+                            pulvinar neque at, lobortis tortor.</p>
+                        <div class="pop-img-gen-btn">
+                            <a href="index.html" class="generateImage pop-generateImage">Generate a image</a>
+                            <button class="generateImage close-grn" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product Photography Modal -->
+        <div class="modal fade" id="productPhotography" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="liqua cgsq">Product Photography</h2>
+                        <p class="sodales pb-0">Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed
+                            eget
+                            viverra egestas nisi in consequat. Fusce sodales augue a accumsan. Cras sollicitudin,
+                            ipsum eget blandit pulvinar. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+                            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            eleifend ac, enim.</p>
+                        <div class="masonry-grid-pop">
+                            <img src="assets/images/slider-images/slider-pop6-img1.jpg" alt="slider-pop-img1">
+                            <img src="assets/images/slider-images/slider-pop6-img2.jpg" alt="slider-pop-img2">
+                            <img src="assets/images/slider-images/slider-pop6-img3.jpg" alt="slider-pop-img3">
+                            <img src="assets/images/slider-images/slider-pop6-img4.jpg" alt="slider-pop-img4">
+                            <img src="assets/images/slider-images/slider-pop6-img5.jpg" alt="slider-pop-img5">
+                            <img src="assets/images/slider-images/slider-pop6-img6.jpg" alt="slider-pop-img6">
+                        </div>
+                        <p class="sodales">Vitae ipsum accumsan iaculis elementum. Lorem sed et fusce risus malesuada
+                            eu cras. Semper molestie elementum magna ullamcorper dui eget dolor nibh bibendum. Eu hac
+                            amet elit netus feugiat consectetur at. Felis habitant posuere neque libero. Placerat quam
+                            eget sollicitudin faucibus id ut a id est. Elit quam nullam luctus sed aliquam sed
+                            viverra.
+                        </p>
+                        <p class="sodales">Aenean et egestas nulla. Pellentesque habitant morbi tristique senectus et
+                            netus et malesuada fames ac turpis egestas. Fusce gravida, ligula non molestie tristique,
+                            justo elit blandit risus, blandit maximus augue magna accumsan ante. Duis id mi tristique,
+                            pulvinar neque at, lobortis tortor.</p>
+                        <div class="pop-img-gen-btn">
+                            <a href="index.html" class="generateImage pop-generateImage">Generate a image</a>
+                            <button class="generateImage close-grn" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Four ===================================== -->
+    <section class="section-four pt-0" id="discover">
+        <div class="container">
+            <h2 class="xplore fade_down">Discover the magic of <span>AI Image Generation.</span></h2>
+            <h3 class="stunnii fade_down">Geralt AI creative exploration easier and faster for everyone. Use Generate
+                image to experiment with your wildest ideas, find new sources of inspiration or create eye-catching
+                content in just a few words.</h3>
+            <div class="row row-imgDisc">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 text-middel zoom_in">
+                    <h3 class="adbance">Advanced AI Artistry</h3>
+                    <p class="unnleas">Unleash the power of Geralt AI. Transform text into high-fidelity images with
+                        unparalleled precision. Experience the future of visual creation.</p>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 img-middel">
+                    <img class="disc1" src="assets/images/home-page/disc1.jpg" alt="disc1">
+                    <img class="disc2" src="assets/images/home-page/disc2.jpg" alt="disc2">
+                </div>
+            </div>
+            <div class="row row-imgDisc aircarft-row">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 disc-mian-col">
+                    <p class="aircraf">Aircraft flying into the sunset, 1980’s hot summer</p>
+                    <img src="assets/images/home-page/disc3.jpg" alt="disc3">
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 text-middel zoom_in">
+                    <h3 class="adbance">Innovative Text Interpretation</h3>
+                    <p class="unnleas">Geralt AI understands the finer details of your imagination. It analyzes the
+                        nuances of your descriptions, including emotions and scenarios, to generate artwork that
+                        perfectly reflects your intent.</p>
+                </div>
+            </div>
+            <div class="row row-imgDisc">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 text-middel zoom_in">
+                    <h3 class="adbance">Art for All Platforms</h3>
+                    <p class="unnleas">Geralt AI makes it easy to use your creations anywhere. Generate stunning visuals
+                        that effortlessly fit into your digital media, print materials, or personal projects.</p>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 text-middel spacer-top">
+                    <img src="assets/images/home-page/disc4.jpg" alt="disc4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Five ===================================== -->
+    <section class="section-five pt-0" id="features">
+        <div class="container">
+            <h2 class="xplore fade_down">Why Create <span>AI Images</span> with Geralt AI</h2>
+            <h3 class="stunnii fade_down">Ultricies tincidunt fusce congue massa nulla vestibulum fringilla faucibus
+                sit. Nunc nullam euismod sit consectetur suspendisse sit amet ultrices ipsum. Tempus est nisl vulputate
+                lectus est maecenas amet.</h3>
+            <div class="row home-features-row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                    <div class="features-cir-main">
+                        <div class="features-cir">
+                            <img src="assets/images/svg/various.svg" alt="various">
+                        </div>
+                        <span class="img-bg-circle" id="img-bg-circle1"></span>
+                    </div>
+                    <h3 class="gendseratio">Various Styles</h3>
+                    <p class="eugiat">Dive into a world of design possibilities. Customize your images with a vast
+                        selection of artistic styles.</p>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                    <div class="features-cir-main">
+                        <div class="features-cir">
+                            <img src="assets/images/svg/resolution.svg" alt="resolution">
+                        </div>
+                        <span class="img-bg-circle" id="img-bg-circle2"></span>
+                    </div>
+                    <h3 class="gendseratio">High Resolution Images</h3>
+                    <p class="eugiat">Summon vivid pictures, sharp graphics, and intricate illustrations. Experience the
+                        power of high-resolution clarity.</p>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                    <div class="features-cir-main">
+                        <div class="features-cir">
+                            <img src="assets/images/svg/watermark.svg" alt="watermark">
+                        </div>
+                        <span class="img-bg-circle" id="img-bg-circle3"></span>
+                    </div>
+                    <h3 class="gendseratio">No Watermarks</h3>
+                    <p class="eugiat">Dive into a world of design possibilities. Customize your images with a vast
+                        selection of artistic styles.</p>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                    <div class="features-cir-main">
+                        <div class="features-cir">
+                            <img src="assets/images/svg/reuse.svg" alt="reuse">
+                        </div>
+                        <span class="img-bg-circle" id="img-bg-circle4"></span>
+                    </div>
+                    <h3 class="gendseratio">Reuse in Cloud Storage</h3>
+                    <p class="eugiat">Control your artistic destiny. Your digital creations, at your fingertips, ready
+                        for your next command.</p>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                    <div class="features-cir-main">
+                        <div class="features-cir">
+                            <img src="assets/images/svg/creat.svg" alt="creat">
+                        </div>
+                        <span class="img-bg-circle" id="img-bg-circle5"></span>
+                    </div>
+                    <h3 class="gendseratio">Free Image Creation</h3>
+                    <p class="eugiat">Earn rewards and unlock up to thirty more, letting you generate thirty stunning AI
+                        images.</p>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                    <div class="features-cir-main">
+                        <div class="features-cir">
+                            <img src="assets/images/svg/instant.svg" alt="instant">
+                        </div>
+                        <span class="img-bg-circle" id="img-bg-circle6"></span>
+                    </div>
+                    <h3 class="gendseratio">Instant Generation</h3>
+                    <p class="eugiat">The path is fraught with monsters, not waiting. Geralt AI crafts your visions with
+                        unmatched speed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Six ===================================== -->
+    <section class="section-six pt-0" id="testimonials">
+        <div class="container">
+            <h2 class="xplore fade_down">Loved by <span>Millions!</span></h2>
+            <h3 class="stunnii fade_down">Est libero volutpat morbi massa. Lorem sodales adipiscing eu maecenas lectus
+                faucibus pharetra. Vivamus sed sit elementum eu. Venenatis euismod egestas metus enim et sed mauris
+                lectus.</h3>
+            <div class="mill-main fade_down">
+                <div>
+                    <h3 class="imgGenerator million counter">
+                        <span class="count" data-count="15"> 15 Million</span>
+                    </h3>
+                    <p class="ueseyss">USERS</p>
+                </div>
+                <div>
+                    <h3 class="imgGenerator million counter">
+                        <span class="count" data-count="126"> 126 Million</span>
+                    </h3>
+                    <p class="ueseyss">IMAGES</p>
+                </div>
+            </div>
+        </div>
+        <div class="millionsSlider">
+            <div class="milions-slider-box">
+                <div class="img-person-text-main">
+                    <div class="person-imh-main">
+                        <img src="assets/images/home-page/person-img1.jpg" alt="person-img1">
+                    </div>
+                    <p class="person-name">Matthew Ritchie</p>
+                </div>
+                <p class="imple">My brain is breaking 🤯 This looks so simple! I use the Adobe suite, but know a lot
+                    of people at startups/independent companies who are short on cash who could use this. Great
+                    idea!
+                </p>
+            </div>
+            <div class="milions-slider-box">
+                <div class="img-person-text-main">
+                    <div class="person-imh-main">
+                        <img src="assets/images/home-page/person-img2.jpg" alt="person-img2">
+                    </div>
+                    <p class="person-name">Arttu Helke</p>
+                </div>
+                <p class="imple">This is ridiculously good. The detail is incredible and couldn’t be easier to use.
+                    Fantastic job!
+                </p>
+            </div>
+            <div class="milions-slider-box">
+                <div class="img-person-text-main">
+                    <div class="person-imh-main">
+                        <img src="assets/images/home-page/person-img3.jpg" alt="person-img3">
+                    </div>
+                    <p class="person-name">Max Rovensky</p>
+                </div>
+                <p class="imple">This is easily the best tool of this kind and i’ve tried about a dozen of them in
+                    every photo editing app there is 😊
+                </p>
+            </div>
+            <div class="milions-slider-box">
+                <div class="img-person-text-main">
+                    <div class="person-imh-main">
+                        <img src="assets/images/home-page/person-img4.jpg" alt="person-img4">
+                    </div>
+                    <p class="person-name">John Patrick Hinek</p>
+                </div>
+                <p class="imple">Wow, this is such an epic tool! Such an easy-to-use alternative to traditional
+                    photoshop.
+                </p>
+            </div>
+            <div class="milions-slider-box">
+                <div class="img-person-text-main">
+                    <div class="person-imh-main">
+                        <img src="assets/images/home-page/person-img5.jpg" alt="person-img5">
+                    </div>
+                    <p class="person-name">Ryan Hoover</p>
+                </div>
+                <p class="imple">Wow! It removes things so smoothly, I can’t eve imagine pictures in my mind better
+                    than it looks after using the magic eraser. Interface & interaction is intuitive.
+                </p>
+            </div>
+            <div class="milions-slider-box">
+                <div class="img-person-text-main">
+                    <div class="person-imh-main">
+                        <img src="assets/images/home-page/person-img6.jpg" alt="person-img6">
+                    </div>
+                    <p class="person-name">Logan Riley</p>
+                </div>
+                <p class="imple">This is ridiculously good. The detail is incredible and couldn’t be easier to use.
+                    Fantastic job!
+                </p>
+            </div>
+            <div class="milions-slider-box">
+                <div class="img-person-text-main">
+                    <div class="person-imh-main">
+                        <img src="assets/images/home-page/person-img7.jpg" alt="person-img7">
+                    </div>
+                    <p class="person-name">Ankush Hver</p>
+                </div>
+                <p class="imple">Wow, this is such an epic tool! Such an easy-to-use alternative to traditional
+                    photoshop.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Seven ===================================== -->
+    <section class="section-seven pt-0">
+        <div class="container">
+            <div class="container">
+                <h2 class="xplore fade_down">Loved by <span>Professionals</span> across the world</h2>
+                <h3 class="stunnii fade_down">Elementum porttitor leo orci libero enim adipiscing justo lacus. Vitae in
+                    amet odio semper rutrum quam in.. Amet pellentesque natoque sit in integer sed tincidunt tellus
+                    quis.
+                </h3>
+            </div>
+        </div>
+        <div class="logos">
+            <div class="logos-slide">
+                <div class="marquee-content pt-0">
+                    <div class="marquee-img-main">
+                        <img class="brand-logos" src="assets/images/home-page/logo1.jpg" alt="logo1">
+                    </div>
+                    <div class="marquee-img-main">
+                        <img class="brand-logos" src="assets/images/home-page/logo2.jpg" alt="logo2">
+                    </div>
+                    <div class="marquee-img-main">
+                        <img class="brand-logos" src="assets/images/home-page/logo3.jpg" alt="logo3">
+                    </div>
+                    <div class="marquee-img-main">
+                        <img class="brand-logos" src="assets/images/home-page/logo4.jpg" alt="logo4">
+                    </div>
+                    <div class="marquee-img-main">
+                        <img class="brand-logos" src="assets/images/home-page/logo5.jpg" alt="logo5">
+                    </div>
+                    <div class="marquee-img-main">
+                        <img class="brand-logos" src="assets/images/home-page/logo6.jpg" alt="logo6">
+                    </div>
+                    <div class="marquee-img-main">
+                        <img class="brand-logos" src="assets/images/home-page/logo7.jpg" alt="logo7">
+                    </div>
+                    <div class="marquee-img-main">
+                        <img class="brand-logos" src="assets/images/home-page/logo8.jpg" alt="logo8">
+                    </div>
+                    <div class="marquee-img-main">
+                        <img class="brand-logos" src="assets/images/home-page/logo9.jpg" alt="logo9">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Eight ===================================== -->
+    <section class="section-eight pt-0" id="pricing">
+        <div class="container">
+            <h2 class="xplore fade_down">Get a plan and <span>Start Creating</span></h2>
+            <h3 class="stunnii fade_down">Est libero volutpat morbi massa. Lorem sodales adipiscing eu maecenas lectus
+                faucibus pharetra. Vivamus sed sit elementum eu. Venenatis euismod egestas metus enim et sed mauris
+                lectus.
+            </h3>
+            <div class="row pricing-rows">
+                <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-9 zoom_in">
+                    <div class="price-box-main">
+                        <p class="freeplan">Free Plan</p>
+                        <h3 class="plan-price">$0<sub>/month</sub></h3>
+                        <a href="#" class="price-plan-btn">Generate a image</a>
+                        <ul class="plan-body">
+                            <li>Generate up to 20 images daily</li>
+                            <li>Try classic fast and flux fast modes</li>
+                            <li>No access to custom characters or styles</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-9 zoom_in">
+                    <div class="price-box-main">
+                        <p class="freeplan">Paid Plan</p>
+                        <h3 class="plan-price">$9.99<sub>/month</sub></h3>
+                        <a href="#" class="price-plan-btn paind-plan">Get A Paid Plan</a>
+                        <ul class="plan-body">
+                            <li>Enjoy thousands of image generations</li>
+                            <li>Unlock all Flux and Mystic modes</li>
+                            <li>Create custom characters or styles</li>
+                            <li>Access advanced AI tools and features</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Nine ===================================== -->
+    <section class="section-nine pt-0">
+        <div class="container">
+            <div class="scanner-main fade_down">
+                <div>
+                    <h2 class="enerat-text">Geralt AI Image Generator App on the Go</h2>
+                    <p class="amles">Dive into a seamless AI image-generating experience. Download the Geralt AI photo
+                        generator app to create images anywhere, anytime.</p>
+                    <div class="play-app-store-main">
+                        <a href="https://play.google.com" target="_blank">
+                            <img src="assets/images/home-page/playStore.png" alt="playStore">
+                        </a>
+                        <a href="https://www.apple.com/in/app-store/" target="_blank">
+                            <img src="assets/images/home-page/appStore.png" alt="appStore">
+                        </a>
+                    </div>
+                </div>
+                <div class="scanner-img-main">
+                    <img class="scanner" src="assets/images/home-page/scanner.png" alt="scanner">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Ten ===================================== -->
+    <section class="section-ten pt-0" id="faq">
+        <div class="container">
+            <div class="row section-ten-row">
+                <div class="col-xxl-4 col-xl-5 col-lg-5">
+                    <div class="sdh">
+                        <h2 class="xplore text-img-sec-text">Text to Image <span>AI Generator FAQs</span></h2>
+                        <h3 class="stunnii text-img-sec-text-sub">Can't find the answer here? Please reach out to us at
+                            <a href="mailto:help@geraltai.com">help@geraltai.com</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-xxl-7 col-xl-7 col-lg-7">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    How does AI generate images?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    AI generates images with vibrant colors and high quality. It is due to the machine
+                                    learning model scanning millions of images on the Internet along with the associated
+                                    text. Through learning and training, the AI model can predict what an image should
+                                    look like based on your provided text.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    Does the AI Create Unique Images?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    AI generates images with vibrant colors and high quality. It is due to the machine
+                                    learning model scanning millions of images on the Internet along with the associated
+                                    text. Through learning and training, the AI model can predict what an image should
+                                    look like based on your provided text.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree">
+                                    Is Geralt AI image generator free?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    AI generates images with vibrant colors and high quality. It is due to the machine
+                                    learning model scanning millions of images on the Internet along with the associated
+                                    text. Through learning and training, the AI model can predict what an image should
+                                    look like based on your provided text.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour">
+                                    Can I use AI images for commercial purposes?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    AI generates images with vibrant colors and high quality. It is due to the machine
+                                    learning model scanning millions of images on the Internet along with the associated
+                                    text. Through learning and training, the AI model can predict what an image should
+                                    look like based on your provided text.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive">
+                                    What can you do with a text-to-image AI generator?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    AI generates images with vibrant colors and high quality. It is due to the machine
+                                    learning model scanning millions of images on the Internet along with the associated
+                                    text. Through learning and training, the AI model can predict what an image should
+                                    look like based on your provided text.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix">
+                                    What's the best AI image generator?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    AI generates images with vibrant colors and high quality. It is due to the machine
+                                    learning model scanning millions of images on the Internet along with the associated
+                                    text. Through learning and training, the AI model can predict what an image should
+                                    look like based on your provided text.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven">
+                                    How does Geralt AI ensure my data's privacy?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    AI generates images with vibrant colors and high quality. It is due to the machine
+                                    learning model scanning millions of images on the Internet along with the associated
+                                    text. Through learning and training, the AI model can predict what an image should
+                                    look like based on your provided text.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight">
+                                    How many images can I generate?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    AI generates images with vibrant colors and high quality. It is due to the machine
+                                    learning model scanning millions of images on the Internet along with the associated
+                                    text. Through learning and training, the AI model can predict what an image should
+                                    look like based on your provided text.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine">
+                                    How do I write good prompts?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    AI generates images with vibrant colors and high quality. It is due to the machine
+                                    learning model scanning millions of images on the Internet along with the associated
+                                    text. Through learning and training, the AI model can predict what an image should
+                                    look like based on your provided text.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTen">
+                                    Why should I use an AI image generator?
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    AI generates images with vibrant colors and high quality. It is due to the machine
+                                    learning model scanning millions of images on the Internet along with the associated
+                                    text. Through learning and training, the AI model can predict what an image should
+                                    look like based on your provided text.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Blog ===================================== -->
+    <section class="section-blog pt-0" id="blogs">
+        <div class="container">
+            <h2 class="xplore fade_down">More From <span>Geralt AI News</span></h2>
+            <h3 class="stunnii fade_down">Nulla ultrices pharetra sagittis tellus diam elementum sem pharetra. Dignissim
+                etiam nunc donec morbi id tortor tristique. Sed fermentum amet nisi mattis nisi proin cras ut libero
+                porttitor.
+            </h3>
+            <div class="row blog-row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="#blogPopUp">
+                    <div class="blog-box-main fade_down">
+                        <div class="blog-img-box">
+                            <img class="blog-img" src="assets/images/blog-images/blog-img1.jpg" alt="blog-img1">
+                            <p class="date-blog">25 MAY 2025</p>
+                        </div>
+                        <h2 class="eque">10 Best AI Video Generators Online (Generative AI) for Beginners in 2025</h2>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="#blogPopUp">
+                    <div class="blog-box-main fade_down">
+                        <div class="blog-img-box">
+                            <img class="blog-img" src="assets/images/blog-images/blog-img2.jpg" alt="blog-img2">
+                            <p class="date-blog">20 MAY 2025</p>
+                        </div>
+                        <h2 class="eque">Top 10 Midjourney Alternatives You Can Try in 2025</h2>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="#blogPopUp">
+                    <div class="blog-box-main fade_down">
+                        <div class="blog-img-box">
+                            <img class="blog-img" src="assets/images/blog-images/blog-img3.jpg" alt="blog-img3">
+                            <p class="date-blog">15 MAY 2025</p>
+                        </div>
+                        <h2 class="eque">What Is AI Art: Meaning, Purpose, Example & Recommendation</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== Blog Modal =============== -->
+    <div class="modal fade" id="blogPopUp" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close form-close-btn" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <h2 class="liqua">10 Best AI Video Generators Online (Generative AI) for Beginners in 2025</h2>
+                    <p class="blog-main-date">25 MAY 2025 | 04:27 PM</p>
+                    <img class="blog-singl-img" src="assets/images/blog-images/blog-singl-img.jpg" alt="blog-singl-img">
+                    <div class="row signgle-blog-row">
+                        <div class="col-xxl-12">
+                            <p class="sodales">Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed eget
+                                viverra egestas nisi in consequat. Fusce sodales augue a accumsan. Cras sollicitudin,
+                                ipsum eget blandit pulvinar. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+                                nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                                vitae, eleifend ac, enim.</p>
+                            <p class="sodales p-0">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore
+                                veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+                            <div class="cott-main">
+                                <svg width="60" height="46" viewBox="0 0 60 46" fill="none">
+                                    <path
+                                        d="M47.1132 46C51.0855 46 54.2263 44.6566 56.5358 41.9698C58.8453 39.283 60 36.1329 60 32.5196C60 30.0181 59.7691 27.7482 59.3072 25.71C58.8453 23.5791 58.1524 21.1239 57.2286 18.3444L50.9931 0H35.1963L42.4018 21.1239C39.6305 22.0504 37.5982 23.718 36.3048 26.1269C34.9192 28.5358 34.2263 30.9446 34.2263 33.3535C34.2263 36.8741 35.5196 39.8852 38.1062 42.3867C40.6005 44.7956 43.6028 46 47.1132 46ZM12.8868 46C16.8591 46 20 44.6566 22.3095 41.9698C24.6189 39.283 25.7737 36.1329 25.7737 32.5196C25.7737 30.0181 25.5427 27.7482 25.0808 25.71C24.6189 23.5791 23.9261 21.1239 23.0023 18.3444L16.7667 0H0.969978L8.17551 21.1239C5.40415 22.0504 3.37182 23.718 2.07852 26.1269C0.692837 28.5358 0 30.9446 0 33.3535C0 36.8741 1.2933 39.8852 3.87991 42.3867C6.37413 44.7956 9.37644 46 12.8868 46Z"
+                                        fill="#5C33FF"></path>
+                                </svg>
+                                <p>Curabitur varius eros et lacus rutrum consequat. Mauris sollicitudin enim
+                                    condimentum, luctus justo non, molestie nisl.</p>
+                            </div>
+                            <p class="sodales">Vitae ipsum accumsan iaculis elementum. Lorem sed et fusce risus
+                                malesuada eu cras. Semper molestie elementum magna ullamcorper dui eget dolor nibh
+                                bibendum. Eu hac amet elit netus feugiat consectetur at. Felis habitant posuere neque
+                                libero. Placerat quam eget sollicitudin faucibus id ut a id est. Elit quam nullam luctus
+                                sed aliquam sed viverra.
+                            </p>
+                            <p class="sodales p-0">Lacus risus malesuada scelerisque quis vitae libero etiam
+                                consectetur. Blandit volutpat iaculis nunc imperdiet non cursus in mi viverra. Sapien ut
+                                metus quis adipiscing vel enim. Lectus a pulvinar.</p>
+                            <div class="wildlife-img-group">
+                                <div class="wildlife-img-group-sub">
+                                    <img src="assets/images/blog-images/blog-singl-img2.jpg" alt="blog-singl-img2">
+                                    <img src="assets/images/blog-images/blog-singl-img3.jpg" alt="blog-singl-img3">
+                                </div>
+                                <img class="blog-singl-img4" src="assets/images/blog-images/blog-singl-img4.jpg"
+                                    alt="blog-singl-img4">
+                            </div>
+                            <p class="sodales pb-0">Sapien ullamcorper et enim imperdiet adipiscing varius. Donec
+                                blandit nulla vulputate laoreet. Semper scelerisque at vitae nec adipiscing arcu lacus
+                                volutpat accumsan. Amet magna nullam lacus aliquam auctor pulvinar in erat.</p>
+                            <h3 class="approach">Individual approach to every project</h3>
+                            <p class="sodales">Aenean et egestas nulla. Pellentesque habitant morbi tristique senectus
+                                et netus et malesuada fames ac turpis egestas. Fusce gravida, ligula non molestie
+                                tristique, justo elit blandit risus, blandit maximus augue magna accumsan ante. Duis id
+                                mi tristique, pulvinar neque at, lobortis tortor.</p>
+                            <p class="sodales pb-0">Etiam vitae leo et diam pellentesque porta. Sed eleifend ultricies
+                                risus, vel rutrum erat commodo ut. Praesent finibus congue euismod. Nullam scelerisque
+                                massa vel augue placerat, a tempor sem egestas. Curabitur placerat finibus lacus.</p>
+                            <div class="footer-media Singleblog-media">
+                                <a href="https://www.facebook.com">
+                                    <img src="assets/images/svg/facebook.svg" alt="facebook">Facebook
+                                </a>
+                                <a href="https://www.instagram.com">
+                                    <img src="assets/images/svg/insta.svg" alt="insta">Instagram
+                                </a>
+                                <a href="https://x.com">
+                                    <img src="assets/images/svg/twitter.svg" alt="twitter">Twitter
+                                </a>
+                                <a href="https://www.linkedin.com">
+                                    <img src="assets/images/svg/linkedin.svg" alt="linkedin">LinkedIn
+                                </a>
+                            </div>
+                            <div class="diamond-nextbtn-head">
+                                <div class="diamond-next-btn">
+                                    <a href="#" class="diamond-btn next">
+                                        <img src="assets/images/svg/outSlider1.svg" alt="left-next-arrow">
+                                    </a>
+                                    <h3>PREVIOUS</h3>
+                                </div>
+                                <button class="dimond-close-btn" data-bs-dismiss="modal">Close</button>
+                                <div class="diamond-next-btn">
+                                    <h3>NEXT</h3>
+                                    <a href="#" class="diamond-btn next">
+                                        <img src="assets/images/svg/outSlider2.svg" alt="right-prv-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====================================== Section community ===================================== -->
+    <section class="section-community pt-0">
+        <div class="container">
+            <h2 class="xplore fade_down"><span>Growing Together</span> As a community</h2>
+            <h3 class="stunnii fade_down">Nulla ultrices pharetra sagittis tellus diam elementum sem pharetra. Dignissim
+                etiam nunc donec morbi id tortor tristique. Sed fermentum amet nisi mattis nisi proin cras ut libero
+                porttitor.
+            </h3>
+            <div class="row comminity-row-main">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="community-box-main zoom_in">
+                        <div>
+                            <p class="comm-fac">Facebook</p>
+                            <p class="d-update">Daily Updates </p>
+                        </div>
+                        <a href="https://www.facebook.com" class="folllow-now">Follow Now</a>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="community-box-main zoom_in">
+                        <div>
+                            <p class="comm-fac">Instagram</p>
+                            <p class="d-update">Daily Short Tips</p>
+                        </div>
+                        <a href="https://www.instagram.com" class="folllow-now">Follow Now</a>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="community-box-main zoom_in">
+                        <div>
+                            <p class="comm-fac">YouTube</p>
+                            <p class="d-update">Tutorial Videos</p>
+                        </div>
+                        <a href="https://x.com" class="folllow-now">Subscribe Now</a>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="community-box-main zoom_in">
+                        <div>
+                            <p class="comm-fac">LinkedIn</p>
+                            <p class="d-update">Latest Trends</p>
+                        </div>
+                        <a href="https://www.linkedin.com" class="folllow-now">Follow Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Footer ===================================== -->
+    <footer class="footer-section">
+        <div class="container">
+            <h2 class="xplore creajkbn">Create AI Images <br><span>with Geralt AI</span></h2>
+            <h3 class="stunnii">Turn your idea a visual with just a prompt, instantly!</h3>
+            <div class="genStartd-min">
+                <a href="#explore" class="genStartd">Generate Started</a>
+            </div>
+            <p class="copyright-text">© 2025
+                <a href="https://1.envato.market/website-portfolio" target="_blank"> Haider Ali</a>, Inc. All rights
+                reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- ====================================== Bottom To Top Button ===================================== -->
+    <button class="bottom-top-button">&#8593;</button>
+    <!-- ====================================== Bottom To Top Button End ===================================== -->
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/smooth-scroll.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/gsap.js"></script>
+    <script src="assets/javascript/scrollMagic.min.js"></script>
+    <script src="assets/javascript/animation.gsap.min.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
