@@ -33,7 +33,7 @@
 ### 📂 Clone This Project:
 
 ```bash
-git clone https://github.com/Codewithhaider29/geralt-ai-template.git
+git clone  https://github.com/Codewithhaider29/Geralt-AI-Template.git
 ```
 
 > ✨ Make sure to replace the repo name above if your actual repository name is different.
